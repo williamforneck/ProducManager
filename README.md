@@ -11,4 +11,4 @@ a aplicação não funcionara corretamente pois não vai conseguir acessar os da
 
 ## Link para o site já hospedado 
 
-https://produc-manager.vercel.app/
+https://product-manager-will.vercel.app/
