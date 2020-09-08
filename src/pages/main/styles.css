@@ -53,7 +53,7 @@
     transition: all 200ms;
 }
 .product-list .actions button:hover{
-    opacity: 70%;
+    background: #da542fc9;
 }
 
 .product-list .actions button[disabled] {
