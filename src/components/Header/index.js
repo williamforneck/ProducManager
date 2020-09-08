@@ -3,7 +3,7 @@ import './styles.css'
 const Header = () => {
     return(
         <header id='main-header'>
-            JSHunt
+            Sistema de Cadastro
         </header>
     )
 }
