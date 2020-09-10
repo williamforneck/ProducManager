@@ -1,0 +1,23 @@
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form .edit{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #666;
+    border: solid 2px #069;
+    padding: 10px;
+    transition-duration: 200ms;
+    border-radius: 5px;
+}
+.form .edit:hover{
+   background: #069;
+   color: #ddd;
+   padding: 10px 90px;
+}
