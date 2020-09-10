@@ -40,6 +40,12 @@ export default class Main extends Component {
     }
     deletar = async evt => {
         const id = evt.target.id
+        const article = window.document.getElementById(`${id}art`)
+
+        article.style.marginLeft="200px"
+        article.style.marginRight="-400px"
+        article.style.opacity="1%"
+
 
         await api.delete(`/products/${id}`)
 
@@ -56,7 +62,7 @@ export default class Main extends Component {
                 </div>
                 <div className="product-list">
                     {products.map(product => (
-                        <article key={product._id}>
+                        <article className='article' id={`${product._id}art`} key={product._id}>
                             <strong>{product.title}</strong> ID: {product._id}
                             <p>{product.description}</p>
                             <Link to={`/products/${product._id}`} >Acessar</Link>
