@@ -21,6 +21,7 @@ export default class edit extends Component {
             description: response.data.description,
             url: response.data.url
          })
+        window.document.getElementById('titulo').focus()
     }
     
     
@@ -42,12 +43,13 @@ export default class edit extends Component {
                 this.props.history.push('/')
             }
         }
+        
         return(
             <div>
                 <h1>Editar</h1>
                 <div className='form'>
                     <p>Título: *</p>
-                    <input onChange={onChange} name="title"         type="text" value={title}></input>
+                    <input onChange={onChange} name="title"         type="text" value={title} id="titulo"></input>
                     <p>Descrição: *</p>
                     <input onChange={onChange} name="description"   type="text" value={description}></input>
                     <p>URL: *</p>

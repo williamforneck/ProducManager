@@ -76,16 +76,22 @@
     background: crimson;
 }
 .button-cadastrar{
-    border: solid 2px green;
-    color: #333;
-    padding: 5px;
     display: flex;
     justify-content: center;
+    align-self: center;
+    background-color: #da552f;
+    margin: -30px auto;
+    margin-bottom: 50px;
+    max-width: 200px;
+    color: white;
+    padding: 10px;
     text-decoration: none;
-    transition-duration: 200ms;
+    border-radius: 4rem;
+    transition-duration: 400ms;
 }
 .button-cadastrar:hover{
-    font-weight: bold;
-    background: green;
-    color: white;
+    max-width: 220px;
+    padding: 20px 10px;
+    margin: -30px auto;
+    margin-bottom: 30px;
 }

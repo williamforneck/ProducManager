@@ -63,7 +63,7 @@ export default class Main extends Component {
                 <div className="product-list">
                     {products.map(product => (
                         <article className='article' id={`${product._id}art`} key={product._id}>
-                            <strong>{product.title}</strong> ID: {product._id}
+                            <strong>{product.title}</strong>
                             <p>{product.description}</p>
                             <Link to={`/products/${product._id}`} >Acessar</Link>
                             <p className="button-delete" onClick={this.deletar} id={`${product._id}`}>Deletar</p>

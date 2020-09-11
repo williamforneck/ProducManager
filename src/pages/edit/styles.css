@@ -13,7 +13,7 @@ h1{
     color: #666;
     border: solid 2px #069;
     padding: 10px;
-    transition-duration: 200ms;
+    transition: 200ms;
     border-radius: 5px;
 }
 .form .edit:hover{

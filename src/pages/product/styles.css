@@ -17,20 +17,20 @@
 .product-info p a{
     color: #069;
 }
-.edit{
+.product-info .edit{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: 20px calc(100% - 90%);
+    margin: 20px calc(100% - 70%);
     text-decoration: none;
     color: #666;
     border: solid 2px #069;
     padding: 10px;
-    transition-duration: 200ms;
+    transition: all 200ms;
     border-radius: 5px;
 }
-.edit:hover{
+.product-info .edit:hover{
    background: #069;
    color: #ddd;
-   margin: 20px auto;
+   margin: 20px;
 }
