@@ -19,6 +19,8 @@ export default class Main extends Component {
         const { docs, ...productInfo } = response.data
 
         this.setState({ products: docs, productInfo, page })
+        document.getElementById('loading').style.display="none"
+        document.getElementById('loadingSpin').style.display="none"
     }
     prevPage = () => {
         const { page } = this.state
@@ -61,6 +63,8 @@ export default class Main extends Component {
                     <Link className="button-cadastrar" to="/cadastrar">Cadastrar</Link>
                 </div>
                 <div className="product-list">
+                <p id="loading" className="loading">Carregando produtos...</p>
+                <p id="loadingSpin" className="loadingSpin"></p>
                     {products.map(product => (
                         <article className='article' id={`${product._id}art`} key={product._id}>
                             <strong>{product.title}</strong>

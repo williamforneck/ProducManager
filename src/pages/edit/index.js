@@ -11,6 +11,7 @@ export default class edit extends Component {
     }
 
     async componentDidMount(){
+        document.getElementById('comp1').style.visibility="hidden"
         const { id } = this.props.match.params
 
         const response =  await api.get(`/products/${id}`)
@@ -21,6 +22,8 @@ export default class edit extends Component {
             description: response.data.description,
             url: response.data.url
          })
+        document.getElementById('loadingSpin').style.display="none"
+        document.getElementById('comp1').style.visibility="visible"
         window.document.getElementById('titulo').focus()
     }
     
@@ -47,7 +50,8 @@ export default class edit extends Component {
         return(
             <div>
                 <h1>Editar</h1>
-                <div className='form'>
+                <p id="loadingSpin" className="loadingSpin"></p>
+                <div id="comp1" className='form'>
                     <p>Título: *</p>
                     <input onChange={onChange} name="title"         type="text" value={title} id="titulo"></input>
                     <p>Descrição: *</p>

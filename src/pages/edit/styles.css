@@ -12,12 +12,35 @@ h1{
     text-decoration: none;
     color: #666;
     border: solid 2px #069;
-    padding: 10px;
+    padding: 10px 30px;
     transition: 200ms;
     border-radius: 5px;
+    background: #fff;
 }
 .form .edit:hover{
    background: #069;
-   color: #ddd;
+   color: rgb(247, 245, 245);
    padding: 10px 90px;
+}
+.loadingSpin{
+    border: 3px dotted black;
+    border-bottom: solid;
+    border-top: solid;
+    
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
 }

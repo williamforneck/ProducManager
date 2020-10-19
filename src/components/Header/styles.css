@@ -1,11 +1,11 @@
 header#main-header{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 100px;
+    padding: 30px;
+    padding-top: 20px;
     background: #da552f;
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
